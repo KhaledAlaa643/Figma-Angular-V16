@@ -39,116 +39,199 @@ export const myObject = {
             users:[
             {
                 user: {
-                avatar: "../../../assets/Images/avatar.svg",
-                name: "خالد علاء",
-                phone: "01110400862"
-                },
-                ticketNumber: "C-101",
-                ticketValue: "40$",
-                cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
-                numberOfPeople: 1,
-                purchaseCount: "مرة واحدة",
-                ticketLink: "path/to/ticket_40.pdf",
+                    avatar: "../../../assets/Images/avatar.svg",
+                    name: "خالد علاء",
+                    phone: "01110400862"
+                    },
+                    ticketNumber: "C-101",
+                    cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
+                    numberOfPeople: 1,
+                    purchaseCount: "مرة واحدة",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    ticketValue: "40$" ,
             },
             {
                 user: {
                     avatar: "../../../assets/Images/avatar.svg",
                     name: "خالد علاء",
                     phone: "01110400862"
-                },
-
-                ticketNumber: "C-101",
-                ticketValue: "40$",
-                cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
-                numberOfPeople: 1,
-                purchaseCount: "مرة واحدة",
-                ticketLink: "path/to/ticket_40.pdf"
+                    },
+                    ticketNumber: "C-101",
+                    cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
+                    numberOfPeople: 1,
+                    purchaseCount: "مرة واحدة",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    ticketValue: "40$" ,
             },
             {
                 user: {
                     avatar: "../../../assets/Images/avatar.svg",
                     name: "خالد علاء",
                     phone: "01110400862"
-                },
-                ticketNumber: "C-101",
-
-                ticketValue: "40$",
-                cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
-                numberOfPeople: 1,
-                purchaseCount: "مرة واحدة",
-                ticketLink: "path/to/ticket_40.pdf"
+                    },
+                    ticketNumber: "C-101",
+                    cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
+                    numberOfPeople: 1,
+                    purchaseCount: "مرة واحدة",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    ticketValue: "40$" ,
             },
             {
                 user: {
                     avatar: "../../../assets/Images/avatar.svg",
                     name: "خالد علاء",
                     phone: "01110400862"
-                },
-                ticketNumber: "C-101",
-
-                ticketValue: "40$",
-                cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
-                numberOfPeople: 1,
-                purchaseCount: "مرة واحدة",
-                ticketLink: "path/to/ticket_40.pdf"
-            },
-            {
-                user: {
-                avatar: "../../../assets/Images/avatar.svg",
-                name: "خالد علاء",
-                phone: "01110400862"
-                },
-                ticketNumber: "C-101",
-
-                ticketValue: "40$",
-                cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
-                numberOfPeople: 1,
-                purchaseCount: "مرة واحدة",
-                ticketLink: "path/to/ticket_40.pdf",
+                    },
+                    ticketNumber: "C-101",
+                    cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
+                    numberOfPeople: 1,
+                    purchaseCount: "مرة واحدة",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    ticketValue: "40$" ,
             },
             {
                 user: {
                     avatar: "../../../assets/Images/avatar.svg",
                     name: "خالد علاء",
                     phone: "01110400862"
-                },
-
-                ticketNumber: "C-101",
-                ticketValue: "40$",
-                cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
-                numberOfPeople: 1,
-                purchaseCount: "مرة واحدة",
-                ticketLink: "path/to/ticket_40.pdf"
+                    },
+                    ticketNumber: "C-101",
+                    cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
+                    numberOfPeople: 1,
+                    purchaseCount: "مرة واحدة",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    ticketValue: "40$" ,
             },
             {
                 user: {
                     avatar: "../../../assets/Images/avatar.svg",
                     name: "خالد علاء",
                     phone: "01110400862"
-                },
-                ticketNumber: "C-101",
-
-                ticketValue: "40$",
-                cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
-                numberOfPeople: 1,
-                purchaseCount: "مرة واحدة",
-                ticketLink: "path/to/ticket_40.pdf"
+                    },
+                    ticketNumber: "C-101",
+                    cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
+                    numberOfPeople: 1,
+                    purchaseCount: "مرة واحدة",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    ticketValue: "40$" ,
             },
             {
                 user: {
                     avatar: "../../../assets/Images/avatar.svg",
                     name: "خالد علاء",
                     phone: "01110400862"
-                },
-                ticketNumber: "C-101",
-
-                ticketValue: "40$",
-                cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
-                numberOfPeople: 1,
-                purchaseCount: "مرة واحدة",
-                ticketLink: "path/to/ticket_40.pdf"
+                    },
+                    ticketNumber: "C-101",
+                    cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
+                    numberOfPeople: 1,
+                    purchaseCount: "مرة واحدة",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    ticketValue: "40$" ,
             },
-                
+            {
+                user: {
+                    avatar: "../../../assets/Images/avatar.svg",
+                    name: "خالد علاء",
+                    phone: "01110400862"
+                    },
+                    ticketNumber: "C-101",
+                    cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
+                    numberOfPeople: 1,
+                    purchaseCount: "مرة واحدة",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    ticketValue: "40$" ,
+            },
+            {
+                user: {
+                    avatar: "../../../assets/Images/avatar.svg",
+                    name: "خالد علاء",
+                    phone: "01110400862"
+                    },
+                    ticketNumber: "C-101",
+                    cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
+                    numberOfPeople: 1,
+                    purchaseCount: "مرة واحدة",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    ticketValue: "40$" ,
+            },
+            {
+                user: {
+                    avatar: "../../../assets/Images/avatar.svg",
+                    name: "خالد علاء",
+                    phone: "01110400862"
+                    },
+                    ticketNumber: "C-101",
+                    cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
+                    numberOfPeople: 1,
+                    purchaseCount: "مرة واحدة",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    ticketValue: "40$" ,
+            },
+            {
+                user: {
+                    avatar: "../../../assets/Images/avatar.svg",
+                    name: "خالد علاء",
+                    phone: "01110400862"
+                    },
+                    ticketNumber: "C-101",
+                    cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
+                    numberOfPeople: 1,
+                    purchaseCount: "مرة واحدة",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    ticketValue: "40$" ,
+            },
+            {
+                user: {
+                    avatar: "../../../assets/Images/avatar.svg",
+                    name: "خالد علاء",
+                    phone: "01110400862"
+                    },
+                    ticketNumber: "C-101",
+                    cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
+                    numberOfPeople: 1,
+                    purchaseCount: "مرة واحدة",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    ticketValue: "40$" ,
+            },
+            {
+                user: {
+                    avatar: "../../../assets/Images/avatar.svg",
+                    name: "خالد علاء",
+                    phone: "01110400862"
+                    },
+                    ticketNumber: "C-101",
+                    cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
+                    numberOfPeople: 1,
+                    purchaseCount: "مرة واحدة",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    ticketValue: "40$" ,
+            },
+            {
+                user: {
+                    avatar: "../../../assets/Images/avatar.svg",
+                    name: "خالد علاء",
+                    phone: "01110400862"
+                    },
+                    ticketNumber: "C-101",
+                    cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
+                    numberOfPeople: 1,
+                    purchaseCount: "مرة واحدة",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    ticketValue: "40$" ,
+            },
+            {
+                user: {
+                    avatar: "../../../assets/Images/avatar.svg",
+                    name: "خالد علاء",
+                    phone: "01110400862"
+                    },
+                    ticketNumber: "C-101",
+                    cinemas: ["سينما مصر", "مول العرب", "برج الأطنان", "سرايا القبة"],
+                    numberOfPeople: 1,
+                    purchaseCount: "مرة واحدة",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    ticketValue: "40$" ,
+            },
             ],
         },
         dashboard: {
@@ -184,7 +267,8 @@ export const myObject = {
             header: [
                 {
                     user: "User",
-                    tickerNumberText: "Ticket No." ,
+                    ticketNo: "Ticket No.",
+                    ticketValue: "Ticket Value" ,
                     cinema: "Cinema" ,
                     personals: "Number Of People" ,
                     purchaseCount: "Purchases Time",
@@ -194,7 +278,7 @@ export const myObject = {
             users:[
                 {
                     ticketNumber: "C-101",
-                    ticketValue: "40$",
+                    ticketValue: "40$" ,
                     cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
                     numberOfPeople: 1,
                     purchaseCount: "One Time",
@@ -205,176 +289,260 @@ export const myObject = {
                         name: "Khaled Alaa",
                         phone: "01110400862"
                     },
-                    },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
                     {
-                        user: {
                         avatar: "../../../assets/Images/avatar.svg",
                         name: "Khaled Alaa",
                         phone: "01110400862"
-                        },
-                        ticketNumber: "C-101",
-                        ticketValue: "40$",
-                        cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
-                        numberOfPeople: 1,
-                        purchaseCount: "One Time",
-                        ticketLink: "path/to/ticket_40.pdf"
                     },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
                     {
-                        user: {
                         avatar: "../../../assets/Images/avatar.svg",
                         name: "Khaled Alaa",
                         phone: "01110400862"
-                        },
-                        ticketNumber: "C-101",
-                        ticketValue: "40$",
-                        cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
-                        numberOfPeople: 1,
-                        purchaseCount: "One Time",
-                        ticketLink: "path/to/ticket_40.pdf"
                     },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
                     {
-                        user: {
                         avatar: "../../../assets/Images/avatar.svg",
                         name: "Khaled Alaa",
                         phone: "01110400862"
-                        },
-                        ticketNumber: "C-101",
-                        ticketValue: "40$",
-                        cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
-                        numberOfPeople: 1,
-                        purchaseCount: "One Time",
-                        ticketLink: "path/to/ticket_40.pdf"
                     },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
                     {
-                        user: {
                         avatar: "../../../assets/Images/avatar.svg",
                         name: "Khaled Alaa",
                         phone: "01110400862"
-                        },
-                        ticketNumber: "C-101",
-                        ticketValue: "40$",
-                        cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
-                        numberOfPeople: 1,
-                        purchaseCount: "One Time",
-                        ticketLink: "path/to/ticket_40.pdf"
                     },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
                     {
-                        user: {
                         avatar: "../../../assets/Images/avatar.svg",
                         name: "Khaled Alaa",
                         phone: "01110400862"
-                        },
-                        ticketNumber: "C-101",
-                        ticketValue: "40$",
-                        cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
-                        numberOfPeople: 1,
-                        purchaseCount: "One Time",
-                        ticketLink: "path/to/ticket_40.pdf"
                     },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
                     {
-                        user: {
                         avatar: "../../../assets/Images/avatar.svg",
                         name: "Khaled Alaa",
                         phone: "01110400862"
-                        },
-                        ticketNumber: "C-101",
-                        ticketValue: "40$",
-                        cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
-                        numberOfPeople: 1,
-                        purchaseCount: "One Time",
-                        ticketLink: "path/to/ticket_40.pdf"
                     },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
                     {
-                        user: {
                         avatar: "../../../assets/Images/avatar.svg",
                         name: "Khaled Alaa",
                         phone: "01110400862"
-                        },
-                        ticketNumber: "C-101",
-                        ticketValue: "40$",
-                        cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
-                        numberOfPeople: 1,
-                        purchaseCount: "One Time",
-                        ticketLink: "path/to/ticket_40.pdf"
                     },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
                     {
-                        user: {
                         avatar: "../../../assets/Images/avatar.svg",
                         name: "Khaled Alaa",
                         phone: "01110400862"
-                        },
-                        ticketNumber: "C-101",
-                        ticketValue: "40$",
-                        cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
-                        numberOfPeople: 1,
-                        purchaseCount: "One Time",
-                        ticketLink: "path/to/ticket_40.pdf"
                     },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
                     {
-                        user: {
                         avatar: "../../../assets/Images/avatar.svg",
                         name: "Khaled Alaa",
                         phone: "01110400862"
-                        },
-                        ticketNumber: "C-101",
-                        ticketValue: "40$",
-                        cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
-                        numberOfPeople: 1,
-                        purchaseCount: "One Time",
-                        ticketLink: "path/to/ticket_40.pdf"
                     },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
                     {
-                        user: {
                         avatar: "../../../assets/Images/avatar.svg",
                         name: "Khaled Alaa",
                         phone: "01110400862"
-                        },
-                        ticketNumber: "C-101",
-                        ticketValue: "40$",
-                        cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
-                        numberOfPeople: 1,
-                        purchaseCount: "One Time",
-                        ticketLink: "path/to/ticket_40.pdf"
                     },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
                     {
-                        user: {
                         avatar: "../../../assets/Images/avatar.svg",
                         name: "Khaled Alaa",
                         phone: "01110400862"
-                        },
-                        ticketNumber: "C-101",
-                        ticketValue: "40$",
-                        cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
-                        numberOfPeople: 1,
-                        purchaseCount: "One Time",
-                        ticketLink: "path/to/ticket_40.pdf"
                     },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
                     {
-                        user: {
                         avatar: "../../../assets/Images/avatar.svg",
                         name: "Khaled Alaa",
                         phone: "01110400862"
-                        },
-                        ticketNumber: "C-101",
-                        ticketValue: "40$",
-                        cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
-                        numberOfPeople: 1,
-                        purchaseCount: "One Time",
-                        ticketLink: "path/to/ticket_40.pdf"
                     },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
                     {
-                        user: {
                         avatar: "../../../assets/Images/avatar.svg",
                         name: "Khaled Alaa",
                         phone: "01110400862"
-                        },
-                        ticketNumber: "C-101",
-                        ticketValue: "40$",
-                        cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
-                        numberOfPeople: 1,
-                        purchaseCount: "One Time",
-                        ticketLink: "path/to/ticket_40.pdf"
                     },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
+                    {
+                        avatar: "../../../assets/Images/avatar.svg",
+                        name: "Khaled Alaa",
+                        phone: "01110400862"
+                    },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
+                    {
+                        avatar: "../../../assets/Images/avatar.svg",
+                        name: "Khaled Alaa",
+                        phone: "01110400862"
+                    },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
+                    {
+                        avatar: "../../../assets/Images/avatar.svg",
+                        name: "Khaled Alaa",
+                        phone: "01110400862"
+                    },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
+                    {
+                        avatar: "../../../assets/Images/avatar.svg",
+                        name: "Khaled Alaa",
+                        phone: "01110400862"
+                    },
+                },
+                {
+                    ticketNumber: "C-101",
+                    ticketValue: "40$" ,
+                    cinemas: ["Cinema Masr", "Arabic Mall", "Atnan Tower", "Saraya Quba"],
+                    numberOfPeople: 1,
+                    purchaseCount: "One Time",
+                    ticketLink: "path/to/ticket_40.pdf",
+                    user:
+                    {
+                        avatar: "../../../assets/Images/avatar.svg",
+                        name: "Khaled Alaa",
+                        phone: "01110400862"
+                    },
+                },
+
             ],
         },
         dashboard: {

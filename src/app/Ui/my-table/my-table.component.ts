@@ -24,9 +24,7 @@ export class MyTableComponent {
   tableHeader!:any
   constructor(private renderer: Renderer2, private el: ElementRef, private uiService: UiService,
     private paginator: MatPaginatorIntl) {
-    this.pageSizeOptions = [5, 10, 50, 100]
-    console.log(this.paginator);
-    
+    this.pageSizeOptions = [5, 10, 50, 100]    
   }
   ngOnInit(): void {
         this.languageSubscription = this.uiService.selectedLanguage$.subscribe((language: string) => {
@@ -36,7 +34,6 @@ export class MyTableComponent {
           this.selectedLanguage == "ar" ? this.direction = "rtl" : this.direction = "ltr"
           this.selectedData = this.data.users
           this.tableHeader = this.data.header[0];
-          
           const element2 = this.el.nativeElement.querySelector('.mat-mdc-paginator-range-label');
             if (this.direction === 'rtl') {
               this.renderer.setProperty(element2, 'innerText', 'عرض');

@@ -395,10 +395,15 @@ tr {
 tr:first-child {
   border-top: 1px solid  #F3F3F5;;
 }
+
+
+
 .hover-container {
   position: relative;
-  display: inline-block;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 .hover-text:hover + .tooltip-text {
   visibility: visible;
 }
@@ -425,11 +430,15 @@ tr:first-child {
   border-style: solid;
   border-color: black transparent transparent transparent;
 }
-#top {
-    width: 100%;
-    bottom: 100%;
-}
 #top::before {
   top: 80%;
   left: 45%;
+}
+#top {
+  transition: left 0.5s, width 0.5s;
+  bottom: 100%;
+}
+.ltr#top {
+  left: 80%;
+  width: 100%;
 }

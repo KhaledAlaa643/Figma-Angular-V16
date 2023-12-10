@@ -67,13 +67,10 @@
                     <td>{{ ticket.ticketValue }}</td>
                     <div class="hover-container">
                         <td class="hover-text">{{ ticket.cinemas.join(', ') }}</td>
-                        <div class=" tooltip-text"  id="top"
-                            [style.left]="direction === 'rtl' ? '0' : null"
-                            [style.left]="direction === 'ltr' ? '80%' : null">
+                        <div class="tooltip-text" id="top" [ngClass]="direction">
                         {{ ticket.cinemas.join(', ') }}
                         </div>
                     </div>
-
                     <td>{{ ticket.numberOfPeople }}</td>
                     <td>{{ ticket.purchaseCount }}</td>
                     <td>
