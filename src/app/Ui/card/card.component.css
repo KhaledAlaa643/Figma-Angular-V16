@@ -1,0 +1,222 @@
+
+/* Drop down list */
+#selectDropdown{
+    width: 78px;
+    font-family: 'Neo-Sans-Arabic-Medium', sans-serif; 
+}
+.fa-arrow-down {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 1%;    
+    transform: translateY(-50%);
+}
+.styled-select:hover {
+    border: 2px solid #8A74F9; 
+}
+.drop-list {
+    position: relative;
+    display: inline-block;
+}
+.styled-select {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  padding: 10px;
+  width:fit-content;
+  border: none;
+  border-radius: 5px;
+  appearance: none;
+  background-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+.styled-select:focus {
+  outline: none;
+  border-color: #8A74F9;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+#selectDropdown > option{
+  background-color: #8a74f9bd;
+  color: white;
+}
+#selectDropdown > option:hover{
+  background-color: #8a74f9;
+  color: white;
+}
+@keyframes fadeInRight{
+    0%{
+        opacity:0;
+        transform:translate3d(100%,0,0)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+
+
+
+/* Card Styles */
+.card-content {
+  position: relative;
+}
+.card{
+  width: 408px;
+  height: 264px;
+  background-color: #8A74F9;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.card-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../assets/Images/stink.svg');
+    background-repeat: repeat;
+    background-size:100%;
+    opacity: 0.1; 
+}
+.card-title{
+  font-family: 'Neo-Sans-Arabic-Medium', sans-serif; 
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+/* Remove & Tooltip */
+.remove{
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  transition: color 0.3s ease;
+  margin-block: 5px;
+  position: relative;
+}
+.remove:hover{
+      color: #2a2359; 
+}
+.rtl .remove {
+  position: absolute;
+  left: 10%;
+}
+.ltr .remove {
+  position: absolute;
+  right: 10%;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  width: 100px;
+  color: white;
+  font-size: 12px;
+  background-color: #192733;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+}
+.tooltip-text::before {
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+  background-color: #192733;
+  padding: 5px;
+  z-index: 1;
+}
+.hover-text:hover .tooltip-text {
+  visibility: visible;
+}
+#bottom {
+    top: 12%;
+}
+#bottom::before {
+  top: -5%;
+  left: 45%;
+}
+.hover-text {
+  font-family: 'Neo-Sans-Arabic-Light', sans-serif;
+  text-align: center;
+}
+
+/* Copy Text */
+.card-copy{
+  direction: ltr;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: fit-content;
+  margin: auto;
+}
+.copy-link {
+  margin-right: 10px; 
+}
+.copy{
+  font-family: 'Neo-Sans-Arabic-Medium', sans-serif; 
+  font-size: 13px;
+}
+.copy h3 {
+  margin: 0;
+}
+.card-copy+div span{
+  font-size: 13px;
+  font-family: 'Neo-Sans-Arabic-Light', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+/* Dotted Line */
+.dotted-line {
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  border-bottom: 5px dashed rgba(255, 255, 255, 0.609); 
+}
+
+
+/* Share & Discount */
+.card-details{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-block-start: 20px;
+}
+.share{
+      display: flex;
+    align-items: end;
+
+}
+.share p {
+  font-family: 'Neo-Sans-Arabic-Medium', sans-serif;
+  color: white;
+  font-size: 14px;
+  text-align: right;
+}
+.disc{
+  margin-inline-start: 10px;
+}
+.dicount{
+  font-size: 18px !important;
+}
+.share button{
+    color: white;
+    font-family: 'Neo-Sans-Arabic-Medium', sans-serif;
+    border: 1px solid white;
+    background: transparent;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+.share-btn{
+        margin-inline-start: 5px;
+}
+.share button:hover {
+    background-color: #5e4ec3; 
+}

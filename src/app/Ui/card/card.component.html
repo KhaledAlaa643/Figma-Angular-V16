@@ -1,0 +1,47 @@
+    <div class="card" [style.direction] = "direction">
+        <div class="card-background"></div>
+            <div class="title" [ngClass]="{'rtl': isRtl(), 'ltr': !isRtl()}">
+                <div class="hover-text">                
+                    <button type="button"class="remove">
+                        <i class="fa-solid fa-trash-can "></i>
+                    </button>
+                    <span class="tooltip-text" id="bottom"
+                        [style.left]="direction === 'rtl' ? '0' : null"
+                        [style.right]="direction === 'ltr' ? '0' : null">
+                        {{data.remove}}
+                    </span>
+                </div>
+                <h2 class="card-title">
+                    {{data.title}}
+                </h2>
+            </div>
+            <div class="card-content">
+                <div class="card-copy">
+                    <a href="#" class="copy-link">
+                        <i class="fas fa-copy" style="color: #8A74F9;"></i>
+                    </a>
+                    <div class="copy">
+                        <h3>www.tazkty.com/473847</h3>
+                    </div>
+                </div>
+                <div class="dotted-line">
+                    <span> {{data.avail}}</span>
+                </div> 
+                <div class="card-details">                
+                    <div class="share">
+                        <div class="disc">
+                            <p> {{data.discount}} </p>
+                            <p class="dicount">25%</p>
+                        </div>
+                        <div class="share-btn">
+                            <button type="button" >
+                                {{data.share}}                  
+                                <i class="fa-solid fa-share"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <img src="../../../assets/Images/khaled.gif" width="20%" height="20%" alt="QR Code">
+                </div>
+            </div>
+    </div> 
+

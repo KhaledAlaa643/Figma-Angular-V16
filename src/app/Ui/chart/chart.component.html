@@ -1,0 +1,20 @@
+        <div class="line-chart" [style.direction] = "direction">
+            <div class="chart-top">
+                <div class="statisticc">
+                    <h2 class="statisticc-text">{{data.statistics}}</h2>
+                    <h5 class="statisticc-date">
+                        {{data.availDate}}
+                    </h5>      
+                </div>
+                <div class="drop-list">
+                    <select class="styled-select" id="selectDropdown">
+                        <option > {{data.dropList.yearly}}  </option>
+                        <option >{{data.dropList.monthly}}</option>
+                        <option >{{data.dropList.weekly}}</option>
+                    </select>
+                </div>
+            </div>
+            <p-chart  
+            class="line-chart"  width="400" height="264" type="line" [data]="dataChart" [options]="options"
+            ></p-chart>
+        </div>

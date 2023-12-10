@@ -1,0 +1,152 @@
+.components{
+        display: flex;
+        flex-direction: row;
+}
+.language{
+    justify-content: space-between !important;
+}
+card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+chart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 300px) {
+    
+    .details {
+        max-width: 400px;
+    }
+    .components{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 640px) {
+    
+    .details {
+        max-width: 640px;
+    }
+    .components{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 768px) {
+    .details {
+        max-width: 768px;
+    }
+    .components{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 1024px) {
+    .details {
+        max-width: 1024px;
+    }
+    .components{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media (min-width: 1280px) {
+    .details {
+        max-width: 1280px;
+    }
+    .components{
+        display: flex;
+        flex-direction: row;
+    }
+    card{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+    chart {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 1380px) {
+    .details {
+        max-width: 1380px;
+    }
+    .components{
+        display: flex;
+        flex-direction: row;
+    }
+    card{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    chart {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 2500px) {
+    .details {
+        max-width: 2500px;
+    }
+    card{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    chart {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+}
+.ticket{
+    display: flex;
+    align-items: center;
+}
+.ticket span{
+  font-family: 'Neo-Sans-Arabic-Bold', sans-serif; 
+  font-size: 16px;
+  margin-inline-start: 5px;
+}
+.edit span{
+  font-family: 'Neo-Sans-Arabic-Medium', sans-serif; 
+  font-size: 14px;
+
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+    margin: 10px auto;
+}
+
+#selectDropdown{
+    width: 100px;
+    text-align: center;
+    font-family: 'Neo-Sans-Arabic-Medium', sans-serif; 
+    border: none;
+    outline: none;
+    }
+.styled-select {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    padding: 5px;
+    width:fit-content;
+    border-radius: 5px;
+    background-size: 20px;
+    outline: none;
+    }
+
+.details {
+    display: flex;
+    justify-content: center;
+}

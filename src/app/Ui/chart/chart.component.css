@@ -1,0 +1,71 @@
+
+.statisticc-text{
+  text-align: right;
+  font-size: 14px;
+  font-family: 'Neo-Sans-Arabic-Medium', sans-serif; 
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+    margin: 10px auto;
+}
+
+.statisticc-date{
+  text-align: right;
+  font-size: 14px;
+  color: #99A1B7;
+  font-family: 'Neo-Sans-Arabic-Light', sans-serif; 
+}
+
+/* Drop down list */
+#selectDropdown{
+  width: 100px;
+  text-align: center;
+  font-family: 'Neo-Sans-Arabic-Medium', sans-serif; 
+  border: none;
+  outline: none;
+}
+.styled-select {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  padding: 5px;
+  width:fit-content;
+  border-radius: 5px;
+  background-size: 20px;
+  outline: none;
+}
+
+@keyframes fadeInRight{
+    0%{
+        opacity:0;
+        transform:translate3d(100%,0,0)
+    }
+    100%{
+        opacity:1;
+        transform:none
+    }
+}
+
+
+.chart-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 107px;
+  text-align: right;
+}
+
+
+.line-chart{
+  width: 100%;
+  height: 264px;
+}
+
+.line-chart-container {
+  height: calc(264px - 107px); 
+  position: relative;
+}
+

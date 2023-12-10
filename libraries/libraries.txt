@@ -1,0 +1,9 @@
+npm i @ng-bootstrap/ng-bootstrap
+npm i ngx-pagination 
+npm i ngx-scrollbar
+npm i   chart.js 
+npm i   primeng 
+npm i   primeicons
+npm i   --save @fortawesome/fontawesome-free
+npm install --save @angular/material @angular/cdk @angular/animations
+ng add @angular/material
