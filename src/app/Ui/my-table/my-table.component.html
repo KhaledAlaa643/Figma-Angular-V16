@@ -56,11 +56,11 @@
                     <td scope="row">{{ i + 1 + ((page - 1) * itemsPerPage ) }}</td>
                     <td>
                         <div class="user-info">
-                        <img [src]="ticket.user.avatar" alt="User Avatar" />
-                        <div class="user-details">
-                            <p>{{ ticket.user.name }}</p>
-                            <p class="ticket-size">{{ ticket.user.phone }}</p>
-                        </div>
+                            <img [src]="ticket.user.avatar" alt="User Avatar" />
+                            <div class="user-details">
+                                <p>{{ ticket.user.name }}</p>
+                                <p class="ticket-size">{{ ticket.user.phone }}</p>
+                            </div>
                         </div>
                     </td>
                     <td>{{ ticket.ticketNumber }}</td>

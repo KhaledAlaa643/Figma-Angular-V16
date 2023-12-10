@@ -134,7 +134,7 @@ chart {
     font-family: 'Neo-Sans-Arabic-Medium', sans-serif; 
     border: none;
     outline: none;
-    }
+}
 .styled-select {
     display: block;
     font-size: 16px;
@@ -144,8 +144,7 @@ chart {
     border-radius: 5px;
     background-size: 20px;
     outline: none;
-    }
-
+}
 .details {
     display: flex;
     justify-content: center;

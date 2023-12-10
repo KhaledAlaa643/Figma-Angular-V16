@@ -1,12 +1,12 @@
 <section class="body" [style.direction] = "direction" style="background-color: aliceblue !important;">
-    <div class="details" >
+    <section class="details" >
         <div>
             <select (change)="onLanguageChange($event)" id="selectDropdown"> 
                 <option id="ar"> <span class="active">عربي</span></option>
                 <option id="en"><span>English</span></option>
             </select>
         </div>
-    </div>
+    </section>
     <section class="details language" [style.direction] = "direction">
         <div class="ticket" >
                 <span><i class="fa-solid fa-arrow-{{direction=='rtl' ? 'right' : 'left'}}"></i></span>

@@ -64,8 +64,4 @@
   height: 264px;
 }
 
-.line-chart-container {
-  height: calc(264px - 107px); 
-  position: relative;
-}
 
