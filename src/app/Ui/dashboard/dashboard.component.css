@@ -68,6 +68,7 @@ chart {
 @media screen and (min-width: 300px) {
     .my-table{
         max-width: 450px;
+        /* align-items: center; */
     }
     .details {
         max-width: 400px;
