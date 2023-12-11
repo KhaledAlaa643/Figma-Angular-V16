@@ -1,8 +1,24 @@
+.details{
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+    margin: 10px auto;
+}
+.my-table{
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+    margin: 10px auto;
+}
 .components{
         display: flex;
         flex-direction: row;
 }
 .language{
+    display: flex;
+    justify-content: center;
+}
+.ticket-details{
     justify-content: space-between !important;
 }
 card{
@@ -15,98 +31,7 @@ chart {
     display: flex;
     justify-content: center;
 }
-@media (min-width: 300px) {
-    
-    .details {
-        max-width: 400px;
-    }
-    .components{
-        display: flex;
-        flex-direction: column;
-    }
-}
-@media (min-width: 640px) {
-    
-    .details {
-        max-width: 640px;
-    }
-    .components{
-        display: flex;
-        flex-direction: column;
-    }
-}
-@media (min-width: 768px) {
-    .details {
-        max-width: 768px;
-    }
-    .components{
-        display: flex;
-        flex-direction: column;
-    }
-}
-@media (min-width: 1024px) {
-    .details {
-        max-width: 1024px;
-    }
-    .components{
-        display: flex;
-        flex-direction: column;
-    }
-    
-}
-@media (min-width: 1280px) {
-    .details {
-        max-width: 1280px;
-    }
-    .components{
-        display: flex;
-        flex-direction: row;
-    }
-    card{
-        width: 40%;
-        display: flex;
-        justify-content: center;
-    }
-    chart {
-        width: 60%;
-        display: flex;
-        justify-content: center;
-    }
-}
-@media (min-width: 1380px) {
-    .details {
-        max-width: 1380px;
-    }
-    .components{
-        display: flex;
-        flex-direction: row;
-    }
-    card{
-        width: 30%;
-        display: flex;
-        justify-content: center;
-    }
-    chart {
-        width: 70%;
-        display: flex;
-        justify-content: center;
-    }
-}
-@media (min-width: 2500px) {
-    .details {
-        max-width: 2500px;
-    }
-    card{
-        width: 30%;
-        display: flex;
-        justify-content: center;
-    }
-    chart {
-        width: 70%;
-        display: flex;
-        justify-content: center;
-    }
-}
+
 .ticket{
     display: flex;
     align-items: center;
@@ -120,12 +45,6 @@ chart {
   font-family: 'Neo-Sans-Arabic-Medium', sans-serif; 
   font-size: 14px;
 
-}
-.details{
-    display: flex;
-    justify-content: space-between;
-    direction: rtl;
-    margin: 10px auto;
 }
 
 #selectDropdown{
@@ -145,7 +64,116 @@ chart {
     background-size: 20px;
     outline: none;
 }
-.details {
-    display: flex;
-    justify-content: center;
+
+@media screen and (min-width: 300px) {
+    .my-table{
+        max-width: 450px;
+    }
+    .details {
+        max-width: 400px;
+    }
+    .components{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 640px) {
+    
+    .my-table {
+        max-width: 640px;
+    }
+    .details {
+        max-width: 640px;
+    }
+    .components{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 768px) {
+    .my-table {
+        max-width: 768px;
+    }
+    .details {
+        max-width: 768px;
+    }
+    .components{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 1024px) {
+    .my-table {
+        max-width: 1024px;
+    }
+    .details {
+        max-width: 1024px;
+    }
+    .components{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media (min-width: 1280px) {
+    .my-table {
+        max-width: 1280px;
+    }
+    .details {
+        max-width: 1280px;
+    }
+    .components{
+        display: flex;
+        flex-direction: row;
+    }
+    card{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+    chart {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 1380px) {
+    .my-table {
+        max-width: 1380px;
+    }
+    .details {
+        max-width: 1380px;
+    }
+    .components{
+        display: flex;
+        flex-direction: row;
+    }
+    card{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    chart {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 2500px) {
+    .my-table {
+        max-width: 2500px;
+    }
+    .details {
+        max-width: 2500px;
+    }
+    card{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    chart {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
 }

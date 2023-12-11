@@ -288,7 +288,7 @@ mat-paginator{
 
 @media screen and (min-width: 300px) {
   table {
-    width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
   }
   th, td {

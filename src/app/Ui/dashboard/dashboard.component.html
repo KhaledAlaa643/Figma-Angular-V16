@@ -1,5 +1,5 @@
 <section class="body" [style.direction] = "direction" style="background-color: aliceblue !important;">
-    <section class="details" >
+    <section class="language" >
         <div>
             <select (change)="onLanguageChange($event)" id="selectDropdown"> 
                 <option id="ar"> <span class="active">عربي</span></option>
@@ -7,7 +7,7 @@
             </select>
         </div>
     </section>
-    <section class="details language" [style.direction] = "direction">
+    <section class="details ticket-details" [style.direction] = "direction">
         <div class="ticket" >
                 <span><i class="fa-solid fa-arrow-{{direction=='rtl' ? 'right' : 'left'}}"></i></span>
                 <span> {{data.ticket}} #2342 </span>
@@ -21,5 +21,5 @@
             <chart></chart>
             <card></card>
     </section>
-    <app-my-table class="details" style="flex-direction: column;"></app-my-table>
+    <app-my-table class=" my-table" style="flex-direction: column;"></app-my-table>
 </section>
