@@ -35,74 +35,70 @@
         </div>
     </div>
 </div>
-<!-- <div class="my-table"> -->
-    <!-- <div class="test-table"[style.direction] = "direction"> -->
-        <table class=""[style.direction] = "direction">
-            <thead>
-                <tr>
-                <th>#</th>
-                <th>  {{tableHeader.user}}  </th>
-                <th>  {{tableHeader.ticketNo}}  </th>
-                <th>  {{tableHeader.ticketValue}}  </th>
-                <th>  {{tableHeader.cinema}}  </th>
-                <th>  {{tableHeader.personals}}  </th>
-                <th>  {{tableHeader.purchaseCount}}  </th>
-                <th>  {{tableHeader.ticket}}  </th>
-                </tr>
-            </thead>
-            <br>
-            <tbody>
-                <tr *ngFor="let ticket of pagedData; let i = index">
-                    <td scope="row">{{ i + 1 + ((page - 1) * itemsPerPage ) }}</td>
-                    <td>
-                        <div class="user-info">
-                            <img [src]="ticket.user.avatar" alt="User Avatar" />
-                            <div class="user-details">
-                                <p>{{ ticket.user.name }}</p>
-                                <p class="ticket-size">{{ ticket.user.phone }}</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td>{{ ticket.ticketNumber }}</td>
-                    <td>{{ ticket.ticketValue }}</td>
-                    <div class="hover-container">
-                        <td class="hover-text">{{ ticket.cinemas.join(', ') }}</td>
-                        <div class="tooltip-text" id="top" [ngClass]="direction">
-                        {{ ticket.cinemas.join(', ') }}
-                        </div>
+<table class=""[style.direction] = "direction">
+    <thead>
+        <tr>
+        <th>#</th>
+        <th>  {{tableHeader.user}}  </th>
+        <th>  {{tableHeader.ticketNo}}  </th>
+        <th>  {{tableHeader.ticketValue}}  </th>
+        <th>  {{tableHeader.cinema}}  </th>
+        <th>  {{tableHeader.personals}}  </th>
+        <th>  {{tableHeader.purchaseCount}}  </th>
+        <th>  {{tableHeader.ticket}}  </th>
+        </tr>
+    </thead>
+    <br>
+    <tbody>
+        <tr *ngFor="let ticket of pagedData; let i = index">
+            <td scope="row">{{ i + 1 + ((page - 1) * itemsPerPage ) }}</td>
+            <td>
+                <div class="user-info">
+                    <img [src]="ticket.user.avatar" alt="User Avatar" />
+                    <div class="user-details">
+                        <p>{{ ticket.user.name }}</p>
+                        <p class="ticket-size">{{ ticket.user.phone }}</p>
                     </div>
-                    <td>{{ ticket.numberOfPeople }}</td>
-                    <td>{{ ticket.purchaseCount }}</td>
-                    <td>
-                        <div class="ticketNumber">
-                            <i class="fa-solid fa-ticket" style="color: #8A74F9;"></i>
-                            <div class="ticketLink"> 
-                                <a [href]="ticket.ticketLink">
-                                    {{data.tickerNumberText}} {{ ticket.ticketNumber }}.pdf
-                                </a> 
-                                <span class="ticket-size">pdf . 9 mb</span>
-                            </div>
-                            <i class="fa-solid fa-download" style="color: #8A74F9;"></i>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    <!-- </div> -->
-    <div class="pagination"[style.direction] = "direction">
-        <mat-paginator 
-            aria-label="Select page"
-            [length]="selectedData.length"
-            [pageSizeOptions]="pageSizeOptions"
-            (page)="onPageChange($event)"
-            [showFirstLastButtons]="false"
-            [class]="labelStyleClass">
-        </mat-paginator>
-        <ngb-pagination
-        [collectionSize]="selectedData.length"
-        [(page)]="page"
-        [pageSize]="itemsPerPage"
-        [boundaryLinks]="false"
-        ></ngb-pagination>
-    </div>
-<!-- </div> -->
+                </div>
+            </td>
+            <td>{{ ticket.ticketNumber }}</td>
+            <td>{{ ticket.ticketValue }}</td>
+            <div class="hover-container">
+                <td class="hover-text">{{ ticket.cinemas.join(', ') }}</td>
+                <div class="tooltip-text" id="top" [ngClass]="direction">
+                {{ ticket.cinemas.join(', ') }}
+                </div>
+            </div>
+            <td>{{ ticket.numberOfPeople }}</td>
+            <td>{{ ticket.purchaseCount }}</td>
+            <td>
+                <div class="ticketNumber">
+                    <i class="fa-solid fa-ticket" style="color: #8A74F9;"></i>
+                    <div class="ticketLink"> 
+                        <a [href]="ticket.ticketLink">
+                            {{data.tickerNumberText}} {{ ticket.ticketNumber }}.pdf
+                        </a> 
+                        <span class="ticket-size">pdf . 9 mb</span>
+                    </div>
+                    <i class="fa-solid fa-download" style="color: #8A74F9;"></i>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div class="pagination"[style.direction] = "direction">
+    <mat-paginator 
+        aria-label="Select page"
+        [length]="selectedData.length"
+        [pageSizeOptions]="pageSizeOptions"
+        (page)="onPageChange($event)"
+        [showFirstLastButtons]="false"
+        [class]="labelStyleClass">
+    </mat-paginator>
+    <ngb-pagination
+    [collectionSize]="selectedData.length"
+    [(page)]="page"
+    [pageSize]="itemsPerPage"
+    [boundaryLinks]="false"
+    ></ngb-pagination>
+</div>

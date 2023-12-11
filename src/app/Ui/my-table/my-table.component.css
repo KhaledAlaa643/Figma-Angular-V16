@@ -156,28 +156,14 @@ input[type="checkbox"] {
 }
 
 /* Table Styles */
-.my-table{
-  width: 100%;
-  margin: auto;
-  background-color: white ;
-  border-radius: 8px;
-}
-.ticket-table {
-  width: 100%;
-  border-collapse: collapse;
-  padding: 10px;    
-  direction: rtl;
-  display: flex;
-  justify-content: center;
-}
-.ticket-table th {
+th {
   text-align: center;
   background-color: #f2f2f2;
   font-size: 13px;
   color:#ABAAB1;
   font-family: 'Neo-Sans-Arabic-Light', sans-serif;
 }
-.ticket-table td{
+td{
   text-align: center;
   font-size: 13px;
   color:#1C1C28;
