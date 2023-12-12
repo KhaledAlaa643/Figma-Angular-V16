@@ -9,7 +9,6 @@ import { NgScrollbarModule } from 'ngx-scrollbar';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from  '@angular/common/http';
 import { MyTableComponent } from './my-table/my-table.component';
 
 @NgModule({
@@ -27,7 +26,6 @@ import { MyTableComponent } from './my-table/my-table.component';
     NgxPaginationModule,
     NgbModule,
     FormsModule,
-    HttpClientModule  
   ]
 })
 export class UiModule { }

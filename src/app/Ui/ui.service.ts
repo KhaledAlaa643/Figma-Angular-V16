@@ -6,6 +6,10 @@ import {myObject } from '../Ui/i18n/language'
 })
 export class UiService {
   data: any = {};
+  languageOptions = [
+    { id: 'ar', name: 'عربي' },
+    { id: 'en', name: 'English' }
+  ];
 constructor() {
   this.data = myObject;
 }
@@ -14,9 +18,11 @@ constructor() {
   updateSelectedLanguage(language: string): any {
     this.selectedLanguageSubject.next(language);
     return this.data[language]
-    
   }
   getLanguageFile() {
     return myObject
+  }
+  getlanguageOptions() {
+    return this.languageOptions
   }
 }

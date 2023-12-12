@@ -18,11 +18,13 @@ export class ChartComponent {
     constructor(private uiService: UiService) {}
 
   ngOnInit() {
-            
+        // 1.subscribe on method to get the language and file from service
         this.languageSubscription = this.uiService.selectedLanguage$.subscribe((language: string) => {
           this.selectedLanguage = language;
           this.translations = this.uiService.getLanguageFile()
           this.data = this.translations[this.selectedLanguage]["chart"];
+
+          // 2.save the new direction value
           this.selectedLanguage == "ar" ? this.direction = "rtl" : this.direction = "ltr"
 
           //charts
@@ -45,7 +47,7 @@ export class ChartComponent {
                 }
               }
           }
-        });
-  }
+        }); // end subs
+  } // end ngOninit
   
 }

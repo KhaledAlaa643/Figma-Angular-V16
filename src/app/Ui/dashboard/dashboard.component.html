@@ -1,12 +1,16 @@
-<section class="body" [style.direction] = "direction" style="background-color: aliceblue !important;">
+<section class="body" [style.direction] = "direction">
+    <!-- select language -->
     <section class="language" >
         <div>
-            <select (change)="onLanguageChange($event)" id="selectDropdown"> 
-                <option id="ar"> <span class="active">عربي</span></option>
-                <option id="en"><span>English</span></option>
+            <select (change)="onLanguageChange($event)" id="selectDropdown">
+                <option *ngFor="let option of languageOptions" [id]="option.id" >
+                    {{ option.name }}
+                </option>            
             </select>
         </div>
     </section>
+
+    <!-- ticket details -->
     <section class="details ticket-details" [style.direction] = "direction">
         <div class="ticket" >
                 <span><i class="fa-solid fa-arrow-{{direction=='rtl' ? 'right' : 'left'}}"></i></span>
@@ -17,9 +21,13 @@
             <span> {{data.edit}} </span>
         </div>
     </section>
+
+    <!-- chart & card -->
     <section class="details components"[style.direction] = "direction">
             <chart></chart>
             <card></card>
     </section>
-    <app-my-table class="my-table" style="flex-direction: column;"></app-my-table>
+
+    <!-- table -->
+    <app-my-table class="my-table" style="flex-direction: column;"[style.direction] = "direction"></app-my-table>
 </section>

@@ -1,9 +1,7 @@
-
 @font-face {
   font-family: 'Neo-Sans-Arabic-Bold';
   src: local('Neo-Sans-Bold'), url('./assets/Fonts/NotoSansArabic-Bold.ttf') format('woff2');
 }
-
 @font-face {
   font-family: 'Neo-Sans-Arabic-Light';
   src: local('Neo-Sans-Light'), url('./assets/Fonts/NotoSansArabic-Light.ttf') format('woff2');
@@ -15,81 +13,22 @@
 canvas {
   font-family: 'Neo-Sans-Arabic-Light', sans-serif; 
 }
-.fa-star{
-  color: orange;
-}
-
-body, html {
-  scroll-behavior: smooth;
-   height: 100%;
-}
-#modalID > div > div > div{
-  background-color: rgba(21, 21, 21, 0.9);
-  border: 2px solid #1ab394;
-  width: fit-content;
-  margin: auto;
-}
-
-.swal2-cancel{
-      margin: 10px;
-}
-.modal-backdrop{
-  opacity: 0.5;
-display: none;
-}
-body { margin: 0; font-family: Neo-Sans-Arabic-Medium, "Helvetica Neue", sans-serif; }
-
-
-
-.ngx-pagination .current{
-      background: darkcyan  !important;
-      border-radius: 15px;
-      
-}
-.pagination-next, .pagination-previous{
-  color:white !important
-}
-.pagination-next:hover, .pagination-previous:hover{
-  color:black !important
-}
-.pagination-next.disabled, .pagination-previous.disabled{
-  color:black !important
-}
-.ngx-pagination a{
-  color: white !important
-}
-.ngx-pagination a:hover{
-  color: black !important;
-  border-radius: 15px;
-
+body { 
+  margin: 0; 
+  font-family: Neo-Sans-Arabic-Medium, "Helvetica Neue", sans-serif; 
 }
 p-chart > div > canvas{
   height: 157px !important;
-    font-family: 'Neo-Sans-Arabic-Medium', sans-serif; 
-
+  font-family: 'Neo-Sans-Arabic-Medium', sans-serif; 
 }
-pagination-controls > pagination-template > nav > ul{
-      background: rgb(83, 182, 185);
-    border-radius: 15px;
-    border: 5px solid #106a58;
-    width: fit-content;
-    margin: 10px auto;
-    padding: 10px;
-}
-
 ngb-pagination > ul > li.page-item.active .page-link{
   color: white !important;
   background-color: #8A74F9 !important;
   border-radius: 4.5px !important;
 }
-
-
-button.mat-mdc-tooltip-trigger.mat-mdc-paginator-navigation-next,button.mat-mdc-tooltip-trigger.mat-mdc-paginator-navigation-previous
+button.mat-mdc-tooltip-trigger.mat-mdc-paginator-navigation-next,
+button.mat-mdc-tooltip-trigger.mat-mdc-paginator-navigation-previous
 {
   display: none;
 }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
 
