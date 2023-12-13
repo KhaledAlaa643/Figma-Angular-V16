@@ -27,41 +27,40 @@ export class MyTableComponent implements OnInit,AfterViewInit{
     private el: ElementRef,
     private uiService: UiService,
     private cdr: ChangeDetectorRef 
-  ) {
-    this.pageSize = [5, 10, 50, 100]
-
-    // set the items per page = 4 when the page load
-    this.dataItems = this.itemsPerPage;
-  }
+  ) {}
   ngAfterViewInit(): void {
-    // Take first 5 items when the page load
-    this.getDataLength()
-
     // change the pagination styles
     this.languageSubscription = this.uiService.selectedLanguageSubject.subscribe(() => {
       this.updateElementProperties();
     });
   }
-
+  
   ngOnInit(): void {
+    this.pageSize = [5, 10, 50, 100]
+
+    // set the items per page = 4 when the page load
+    this.dataItems = this.itemsPerPage;
+
     // 1.subscribe on method to get the language and file from service
     this.languageSubscription = this.uiService.selectedLanguage$.subscribe((language: string) => {
       this.selectedLanguage = language;
       this.translations = this.uiService.getLanguageFile()
       this.data = this.translations[this.selectedLanguage]["table"]
 
-      // 2.change the direction 
-      this.selectedLanguage == "ar" ? this.direction = "rtl" : this.direction = "ltr"
+    // 2.change the direction 
+    this.selectedLanguage == "ar" ? this.direction = "rtl" : this.direction = "ltr"
 
-      // 3.save the header values to bind on it in table
-      this.tableHeader = this.data.header[0];
+    // 3.save the header values to bind on it in table
+    this.tableHeader = this.data.header[0];
 
     }); // end of subscribtion
-        
-  } // end ngOninit
-      
 
-  // 3.Method to take first 5 items 
+    // Take first 5 items when the page load
+      this.getDataLength()
+  } // end ngOninit
+
+
+  // Method to take first 5 items 
   getDataLength() {
     this.initialData = []
     for (let i = 1; i <= 5; i++){
@@ -69,6 +68,7 @@ export class MyTableComponent implements OnInit,AfterViewInit{
     }
     this.selectedData = this.initialData;
   }
+
   // show 4 items only per page 
   get pagedData() {
     const startIndex = (this.page - 1) * this.itemsPerPage;

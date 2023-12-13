@@ -6,15 +6,21 @@ import {myObject } from '../Ui/i18n/language'
 })
 export class UiService {
   data: any = {};
-  languageOptions = [
+  language!:string
+  languageOptionsAr = [
     { id: 'ar', name: 'عربي' },
-    { id: 'en', name: 'English' }
+    { id: 'en', name: 'English' },
+  ];
+  languageOptionsEn = [
+    { id: 'en', name: 'English' },
+    { id: 'ar', name: 'عربي' },
   ];
 constructor() {
   this.data = myObject;
 }
   selectedLanguageSubject = new BehaviorSubject<string>('ar');
   selectedLanguage$ = this.selectedLanguageSubject.asObservable();
+  
   updateSelectedLanguage(language: string): any {
     this.selectedLanguageSubject.next(language);
     return this.data[language]
@@ -23,6 +29,9 @@ constructor() {
     return myObject
   }
   getlanguageOptions() {
-    return this.languageOptions
-  }
+    this.language = this.selectedLanguageSubject.getValue()
+    if (this.language == "ar") {
+      return this.languageOptionsAr
+    } else return this.languageOptionsEn
+    }
 }
