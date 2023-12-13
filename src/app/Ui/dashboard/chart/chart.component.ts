@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { UiService } from '../ui.service';
+import { UiService } from '../../ui.service';
 
 @Component({
   selector: 'chart',

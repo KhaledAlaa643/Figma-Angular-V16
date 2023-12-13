@@ -1,6 +1,7 @@
-import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { UiService } from '../ui.service';
 import { Subscription } from 'rxjs';
+import { MyTableComponent } from './my-table/my-table.component';
 
 @Component({
   selector: 'dashboard',
@@ -13,7 +14,9 @@ export class DashboardComponent implements OnInit{
   languageSubscription!: Subscription;
   data: any = {};
   direction!: string
-  languageOptions:any = {}
+  languageOptions: any = {}
+  @ViewChild(MyTableComponent) tableComponent!: MyTableComponent;
+
   constructor(private uiService:UiService) {}
   ngOnInit(): void {
        // 1.subscribe on method to get the language and file from service
@@ -25,14 +28,19 @@ export class DashboardComponent implements OnInit{
         // 2.save the new direction value
           this.selectedLanguage =="ar" ? this.direction = "rtl" : this.direction = "ltr"
         });
-    this.languageOptions = this.uiService.getlanguageOptions()    
-  }
+
+        // get the language from service
+        this.languageOptions = this.uiService.getlanguageOptions()  
+    
+  } // end of ngOninit
+
   // change the direction based on language
   onLanguageChange(event: any): void {
     const selectedLanguage = event.target.options[event.target.selectedIndex].id;
     this.uiService.updateSelectedLanguage(selectedLanguage);
-    
-    }
+
+  }
+  
   ngOnDestroy(): void {
     this.languageSubscription.unsubscribe();
   }

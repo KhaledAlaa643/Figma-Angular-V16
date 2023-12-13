@@ -93,9 +93,10 @@
 <!-- pagination -->
 <div class="pagination" >
     <mat-paginator 
+        #paginator
         aria-label="Select page"
         [length]="selectedData.length"
-        [pageSizeOptions]="pageSizeOptions"
+        [pageSizeOptions]="pageSize"
         (page)="onPageChange($event)"
         [showFirstLastButtons]="false"
         [class]="labelStyleClass">

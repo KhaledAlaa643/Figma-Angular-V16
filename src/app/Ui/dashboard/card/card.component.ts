@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UiService } from '../ui.service';
+import { UiService } from '../../ui.service';
 import { Subscription } from 'rxjs';
 @Component({
   selector: 'card',
