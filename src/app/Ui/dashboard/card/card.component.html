@@ -1,13 +1,13 @@
     <div class="card" [style.direction] = "direction">
         <div class="card-background"></div>
-            <div class="title" [ngClass]="{'rtl': isRtl(), 'ltr': !isRtl()}">
+            <div class="title" [ngClass]="direction">
                 <div class="hover-text">                
                     <button type="button"class="remove">
                         <i class="fa-solid fa-trash-can "></i>
                     </button>
                     <span class="tooltip-text" id="bottom"
-                        [style.left]="direction === 'rtl' ? '0' : null"
-                        [style.right]="direction === 'ltr' ? '0' : null">
+                        [style.left]="direction"
+                        [style.right]="direction">
                         {{data.remove}}
                     </span>
                 </div>

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import {myObject } from '../Ui/i18n/language'
+import {myLanguages } from '../Ui/i18n/language'
 @Injectable({
   providedIn: 'root'
 })
@@ -16,7 +16,7 @@ export class UiService {
     { id: 'ar', name: 'عربي' },
   ];
 constructor() {
-  this.data = myObject;
+  this.data = myLanguages;
 }
   selectedLanguageSubject = new BehaviorSubject<string>('ar');
   selectedLanguage$ = this.selectedLanguageSubject.asObservable();
@@ -26,7 +26,7 @@ constructor() {
     return this.data[language]
   }
   getLanguageFile() {
-    return myObject
+    return myLanguages
   }
   getlanguageOptions() {
     this.language = this.selectedLanguageSubject.getValue()

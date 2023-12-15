@@ -1,6 +1,7 @@
-import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { UiService } from '../../ui.service';
+import { MatPaginator } from '@angular/material/paginator';
 
 @Component({
   selector: 'app-my-table',
@@ -21,7 +22,9 @@ export class MyTableComponent implements OnInit,AfterViewInit{
   selectedData: any[] = [];
   labelStyleClass: string = '';
   tableHeader!: any
-  initialData :any [] = []
+  initialData: any[] = []
+  defaultPageSize = 5;
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
   constructor(
     private renderer: Renderer2,
     private el: ElementRef,
@@ -37,42 +40,43 @@ export class MyTableComponent implements OnInit,AfterViewInit{
   
   ngOnInit(): void {
     this.pageSize = [5, 10, 50, 100]
-
+    
     // set the items per page = 4 when the page load
     this.dataItems = this.itemsPerPage;
-
+    
     // 1.subscribe on method to get the language and file from service
     this.languageSubscription = this.uiService.selectedLanguage$.subscribe((language: string) => {
       this.selectedLanguage = language;
       this.translations = this.uiService.getLanguageFile()
       this.data = this.translations[this.selectedLanguage]["table"]
+      
+      // 2.change the direction 
+      this.selectedLanguage == "ar" ? this.direction = "rtl" : this.direction = "ltr"
+      
+      // 3.save the header values to bind on it in table
+      this.tableHeader = this.data.header[0];
 
-    // 2.change the direction 
-    this.selectedLanguage == "ar" ? this.direction = "rtl" : this.direction = "ltr"
-
-    // 3.save the header values to bind on it in table
-    this.tableHeader = this.data.header[0];
-
-    }); // end of subscribtion
-
-    // Take first 5 items when the page load
+      // Take first 5 items when the page load
       this.getDataLength()
-  } // end ngOninit
+
+      // reset the pagination to default when language is changed
+      this.paginator.pageSize = this.defaultPageSize;
+      
+  }); // end of subscribtion
+  
+} // end ngOninit
 
 
-  // Method to take first 5 items 
+// Method to take first 5 items 
   getDataLength() {
-    this.initialData = []
-    for (let i = 1; i <= 5; i++){
-      this.initialData.push(this.data.users[i])
-    }
-    this.selectedData = this.initialData;
+    this.selectedData = this.data.users.slice(0, 5);
   }
 
   // show 4 items only per page 
   get pagedData() {
     const startIndex = (this.page - 1) * this.itemsPerPage;
     const endIndex = startIndex + this.itemsPerPage;
+    
     return this.selectedData.slice(startIndex, endIndex);
   }
 
@@ -90,7 +94,8 @@ export class MyTableComponent implements OnInit,AfterViewInit{
     for (let i = 0; i < Math.min(this.dataItems, this.data.users.length); i++) {
       this.selectedData.push(this.data.users[i]);
     }
-    return this
+    console.log(this.selectedData);
+    return this.selectedData
   }
 
   // Change Value & Styles in pagination

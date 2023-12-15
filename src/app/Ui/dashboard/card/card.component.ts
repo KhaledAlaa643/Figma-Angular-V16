@@ -25,7 +25,8 @@ export class CardComponent implements OnInit {
           this.selectedLanguage == "ar" ? this.direction = "rtl" : this.direction = "ltr"          
       });
   }
-  isRtl(): boolean {
-    return this.direction === 'rtl';
-  }
+  ngOnDestroy(): void {
+      this.languageSubscription.unsubscribe();
+    }
+  
 }

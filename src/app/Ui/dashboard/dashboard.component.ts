@@ -24,7 +24,7 @@ export class DashboardComponent implements OnInit{
           this.selectedLanguage = language;
           this.translations = this.uiService.getLanguageFile()
           this.data = this.translations[this.selectedLanguage]["dashboard"]
-
+          
         // 2.save the new direction value
           this.selectedLanguage =="ar" ? this.direction = "rtl" : this.direction = "ltr"
         });
