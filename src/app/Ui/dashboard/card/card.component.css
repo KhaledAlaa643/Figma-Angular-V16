@@ -162,6 +162,11 @@
   font-family: 'Neo-Sans-Arabic-Light', sans-serif;
   text-align: center;
 }
-
+.title.rtl span{
+  left: 0;
+}
+.title.ltr span{
+  right: 0;
+}
 
 

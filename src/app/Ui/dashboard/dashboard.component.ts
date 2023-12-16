@@ -2,6 +2,7 @@ import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/co
 import { UiService } from '../ui.service';
 import { Subscription } from 'rxjs';
 import { MyTableComponent } from './my-table/my-table.component';
+import { DashboardData, LanguageDataObj } from '../ui';
 
 @Component({
   selector: 'dashboard',
@@ -9,10 +10,9 @@ import { MyTableComponent } from './my-table/my-table.component';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit{
-  translations: any = {};
-  selectedLanguage!: string;
+  translations!: LanguageDataObj ;
   languageSubscription!: Subscription;
-  data: any = {};
+  data!: DashboardData;
   direction!: string
   languageOptions: any = {}
   @ViewChild(MyTableComponent) tableComponent!: MyTableComponent;
@@ -21,24 +21,21 @@ export class DashboardComponent implements OnInit{
   ngOnInit(): void {
        // 1.subscribe on method to get the language and file from service
         this.languageSubscription = this.uiService.selectedLanguage$.subscribe((language: string) => {
-          this.selectedLanguage = language;
           this.translations = this.uiService.getLanguageFile()
-          this.data = this.translations[this.selectedLanguage]["dashboard"]
+          this.data = this.translations["dashboard"]
           
         // 2.save the new direction value
-          this.selectedLanguage =="ar" ? this.direction = "rtl" : this.direction = "ltr"
+          language =="ar" ? this.direction = "rtl" : this.direction = "ltr"
         });
 
         // get the language from service
-        this.languageOptions = this.uiService.getlanguageOptions()  
-    
+        this.languageOptions = this.uiService.getlanguageOptions()
   } // end of ngOninit
 
   // change the direction based on language
   onLanguageChange(event: any): void {
     const selectedLanguage = event.target.options[event.target.selectedIndex].id;
     this.uiService.updateSelectedLanguage(selectedLanguage);
-
   }
   
   ngOnDestroy(): void {
