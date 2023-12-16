@@ -1,3 +1,4 @@
+import { AppComponent } from "../app.component";
 
 export interface User {
     avatar: string;
@@ -41,12 +42,12 @@ export interface TableRow {
 }
 
 export interface TableData {
-    ticketSale: string;
+    header: TableHeader[];
+    newTicket: string;
     search: string;
     switch: { on: string; off: string };
-    newTicket: string;
+    ticketSale: string;
     tickerNumberText: string;
-    header: TableHeader[];
     users: TableRow[];
 }
 
@@ -79,12 +80,6 @@ export interface LanguageData {
     };
 }
 
-export interface LanguageDataObj {
-    dir: string;
-    card: CardData;
-    chart: ChartData;
-    table: TableData;
-    dashboard: DashboardData;
-}
+
 
 

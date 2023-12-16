@@ -25,9 +25,9 @@ constructor() {
     this.selectedLanguageSubject.next(language);
     return this.data[language]
   }
-  getLanguageFile() {
-    this.language = this.selectedLanguageSubject.getValue()    
-    return myLanguages[this.language]
+  getLanguageFile(component:string) {
+    this.language = this.selectedLanguageSubject.getValue() 
+    return myLanguages[this.language][component]
   }
   getlanguageOptions() {
     this.language = this.selectedLanguageSubject.getValue()

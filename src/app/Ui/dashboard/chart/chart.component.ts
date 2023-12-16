@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { UiService } from '../../ui.service';
-import { ChartData, LanguageDataObj } from '../../ui';
+import { ChartData } from '../../ui';
 
 @Component({
   selector: 'chart',
@@ -9,19 +9,17 @@ import { ChartData, LanguageDataObj } from '../../ui';
   styleUrls: ['./chart.component.css']
 })
 export class ChartComponent {
-  translations!: LanguageDataObj;
-  languageSubscription!: Subscription;
   data!: ChartData;
   dataChart: any;
   options: any;
   direction!:string
+  languageSubscription!: Subscription;
     constructor(private uiService: UiService) {}
 
   ngOnInit() {
         // 1.subscribe on method to get the language and file from service
         this.languageSubscription = this.uiService.selectedLanguage$.subscribe((language: string) => {
-          this.translations = this.uiService.getLanguageFile()
-          this.data = this.translations["chart"];
+          this.data = this.uiService.getLanguageFile("chart")
 
           // 2.save the new direction value
           language == "ar" ? this.direction = "rtl" : this.direction = "ltr"

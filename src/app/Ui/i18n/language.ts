@@ -1,6 +1,6 @@
-import { LanguageData } from "../ui";
+import { LanguageDataObj } from "../ui";
 
-export const myLanguages:LanguageData  = {
+export const myLanguages:any  = {
     ar:
     {
         dir: "rtl",

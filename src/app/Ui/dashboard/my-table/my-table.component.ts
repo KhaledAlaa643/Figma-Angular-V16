@@ -2,7 +2,7 @@ import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnInit, Render
 import { Subscription } from 'rxjs';
 import { UiService } from '../../ui.service';
 import { MatPaginator } from '@angular/material/paginator';
-import {LanguageDataObj, TableData, TableHeader, TableRow } from '../../ui';
+import { TableData, TableHeader, TableRow } from '../../ui';
 @Component({
   selector: 'app-my-table',
   templateUrl: './my-table.component.html',
@@ -10,7 +10,6 @@ import {LanguageDataObj, TableData, TableHeader, TableRow } from '../../ui';
 })
 export class MyTableComponent implements OnInit,AfterViewInit{
   languageSubscription!: Subscription;
-  translations!: LanguageDataObj ;
   data!: TableData ;
   selectedData!: TableRow[];
   tableHeader!: TableHeader;
@@ -52,11 +51,10 @@ export class MyTableComponent implements OnInit,AfterViewInit{
     // 1.subscribe on method to get the language and file from service
     
     this.languageSubscription = this.uiService.selectedLanguage$.subscribe((language: string) => {
-      this.translations = this.uiService.getLanguageFile()      
-      this.data = this.translations["table"]
-      
+      this.data = this.uiService.getLanguageFile("table");
+
       // 2.change the direction 
-      language == "ar" ? this.direction = "rtl" : this.direction = "ltr"
+      language == "ar" ? this.direction = "rtl" : this.direction = "ltr";
       
       // 3.save the header values to bind on it in table
       this.tableHeader = this.data.header[0];
