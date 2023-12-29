@@ -19,7 +19,8 @@ constructor(private uiService: UiService) { }
           
           // 2.save the new direction value
           language == "ar" ? this.direction = "rtl" : this.direction = "ltr"          
-      });
+          
+        });
   }
   ngOnDestroy(): void {
       this.languageSubscription.unsubscribe();

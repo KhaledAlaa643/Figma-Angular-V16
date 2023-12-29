@@ -74,8 +74,8 @@
   margin-block-start: 20px;
 }
 .share{
-      display: flex;
-    align-items: end;
+  display: flex;
+  align-items: flex-end;
 
 }
 .share p {

@@ -1,12 +1,10 @@
-import { AppComponent } from "../app.component";
-
 export interface User {
     avatar: string;
     name: string;
     phone: string;
 }
 
-export interface CardData {
+export interface CardData{
     title: string;
     avail: string;
     discount: string;
@@ -14,7 +12,7 @@ export interface CardData {
     remove: string;
 }
 
-export interface ChartData {
+export interface ChartData{
     availDate: string;
     statistics: string;
     dropList: { weekly: string; monthly: string; yearly: string };
@@ -51,7 +49,7 @@ export interface TableData {
     users: TableRow[];
 }
 
-export interface DashboardData {
+export interface DashboardData{
     edit: string;
     ticket: string;
 }
@@ -79,7 +77,3 @@ export interface LanguageData {
         table: TableData;
     };
 }
-
-
-
-

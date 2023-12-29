@@ -1,5 +1,3 @@
-import { LanguageDataObj } from "../ui";
-
 export const myLanguages:any  = {
     ar:
     {
